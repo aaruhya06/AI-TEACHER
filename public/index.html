@@ -12,7 +12,9 @@
     <div class="auth-box">
 
       <h1 class="logo">AI Teacher</h1>
-      <p class="tagline">Smart learning, powered by AI</p>
+      <p class="tagline">
+        Turn PDFs into <span>smart learning</span> instantly
+      </p>
 
       <!-- Tabs -->
       <div class="tabs">
@@ -20,31 +22,64 @@
         <span id="signupTab" class="tab">Sign Up</span>
       </div>
 
+      <!-- Error -->
+      <div id="errorBox" class="error-box hidden"></div>
+
       <!-- Login -->
       <form id="loginForm" class="form">
         <label>Email</label>
-        <input type="email" placeholder="you@example.com" required>
+        <input type="email" required placeholder="you@example.com">
 
         <label>Password</label>
-        <input type="password" placeholder="••••••••" required>
+        <div class="password-wrap">
+          <input type="password" id="loginPassword" required>
+          <span class="toggle-pass" id="toggleLoginPass">👁️</span>
+        </div>
 
-        <button class="btn-primary">Continue</button>
+        <button class="btn-primary" id="loginBtn">
+          <span id="loginText">Continue</span>
+          <span id="loginLoader" class="loader hidden"></span>
+        </button>
+
+        <p class="link-text" id="forgotPassword">Forgot password?</p>
+
+        <div class="divider">or</div>
+
+        <button type="button" class="google-btn">
+          Continue with Google
+        </button>
+
+        <p class="helper-text">Your data stays private · No spam</p>
       </form>
 
       <!-- Signup -->
       <form id="signupForm" class="form hidden">
         <label>Full Name</label>
-        <input type="text" placeholder="Your name" required>
+        <input type="text" required>
 
         <label>Email</label>
-        <input type="email" placeholder="you@example.com" required>
+        <input type="email" required>
 
         <label>Password</label>
-        <input type="password" placeholder="Create password" required>
+        <div class="password-wrap">
+          <input type="password" id="signupPassword" required>
+          <span class="toggle-pass" id="toggleSignupPass">👁️</span>
+        </div>
 
         <button class="btn-primary">Create Account</button>
+        <p class="helper-text">No credit card required</p>
       </form>
 
+    </div>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div id="forgotModal" class="modal hidden">
+    <div class="modal-box">
+      <h3>Reset Password</h3>
+      <input type="email" placeholder="Enter your email">
+      <button class="btn-primary">Send reset link</button>
+      <p class="link-text" id="closeModal">Close</p>
     </div>
   </div>
 

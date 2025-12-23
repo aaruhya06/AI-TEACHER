@@ -7,20 +7,43 @@
 </head>
 <body>
 
-  <div class="card">
-    <h1>Teacher Dashboard</h1>
-    <p>Select a feature</p>
+  <div class="dash-wrapper">
+    <div class="dash-container">
 
-    <div class="option-group">
-  <button class="option-btn" onclick="selectFeature('ppt')">📊 Make PPT</button>
-  <button class="option-btn" onclick="selectFeature('notes')">📝 Make Notes</button>
-  <button class="option-btn" onclick="selectFeature('flashcards')">🧠 Make Flash Cards</button>
-</div>
+      <h1 class="dash-title">Teacher Dashboard</h1>
+      <p class="dash-subtitle">Manage content and guide learning with AI</p>
 
-    <br>
-    <button onclick="logout()">Logout</button>
+      <div class="dash-grid">
+
+        <div class="dash-card go-upload">
+          <div class="dash-icon">📄</div>
+          <h3>Upload Study Material</h3>
+          <p>Upload PDFs and generate summaries</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">🧠</div>
+          <h3>Create Notes</h3>
+          <p>AI-generated notes from materials</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">❓</div>
+          <h3>Generate MCQs</h3>
+          <p>Create quizzes automatically</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">📊</div>
+          <h3>View Activity</h3>
+          <p>Track uploads and engagement</p>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
-  <script src="ui.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

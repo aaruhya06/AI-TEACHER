@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Category | AI Teacher</title>
+  <title>Select Category | AI Teacher</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1 id="categoryTitle"></h1>
-    <p>Select your category</p>
+  <div class="category-wrapper">
+    <div class="category-container">
 
-    <div class="option-group">
-      <button class="option-btn" onclick="selectCategory('school')">
-        🏫 School
-      </button>
+      <h1 class="page-title">Select your category</h1>
+      <p class="page-subtitle">Choose where you currently study</p>
 
-      <button class="option-btn" onclick="selectCategory('college')">
-        🏛️ College
-      </button>
+      <div class="category-cards">
+
+        <!-- School -->
+        <div class="category-card" data-category="school">
+          <div class="category-icon">🏫</div>
+          <h2>School</h2>
+          <p>Classes, subjects and exam preparation</p>
+        </div>
+
+        <!-- College -->
+        <div class="category-card" data-category="college">
+          <div class="category-icon">🎓</div>
+          <h2>College</h2>
+          <p>Courses, notes and advanced learning</p>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
-  <script src="ui.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

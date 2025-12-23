@@ -7,20 +7,33 @@
 </head>
 <body>
 
-  <div class="card">
-    <h1>Who are you?</h1>
+  <div class="role-wrapper">
+    <div class="role-container">
 
-    <div class="option-group">
-      <button class="option-btn" onclick="selectRole('teacher')">
-        👨‍🏫 Teacher
-      </button>
+      <h1 class="page-title">Choose your role</h1>
+      <p class="page-subtitle">This helps us personalize your experience</p>
 
-      <button class="option-btn" onclick="selectRole('student')">
-        🎓 Student
-      </button>
+      <div class="role-cards">
+
+        <!-- Teacher -->
+        <div class="role-card" id="teacherRole">
+          <div class="role-icon">👨‍🏫</div>
+          <h2>Teacher</h2>
+          <p>Upload materials, create notes and guide students</p>
+        </div>
+
+        <!-- Student -->
+        <div class="role-card" id="studentRole">
+          <div class="role-icon">👩‍🎓</div>
+          <h2>Student</h2>
+          <p>Learn smarter with AI summaries and insights</p>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
-  <script src="ui.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

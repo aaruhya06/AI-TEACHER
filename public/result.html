@@ -1,47 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AI Teacher | Login</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Summary | AI Teacher</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="auth-container">
-    <div class="auth-card">
+  <div class="result-wrapper">
+    <div class="result-container">
 
-      <h1 class="app-title">AI Teacher</h1>
-      <p class="app-subtitle">Smart learning powered by AI</p>
+      <h1 class="page-title">AI Summary</h1>
+      <p class="page-subtitle">Here’s a simplified summary of your document</p>
 
-      <!-- Toggle -->
-      <div class="auth-toggle">
-        <button id="loginTab" class="active">Login</button>
-        <button id="signupTab">Sign Up</button>
+      <!-- Summary Card -->
+      <div class="summary-card">
+        <pre id="summaryText">Loading summary...</pre>
       </div>
 
-      <!-- Login Form -->
-      <form id="loginForm" class="auth-form">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit" class="primary-btn">Login</button>
-      </form>
-
-      <!-- Signup Form -->
-      <form id="signupForm" class="auth-form hidden">
-        <input type="text" placeholder="Full Name" required />
-        <input type="number" placeholder="Age" required />
-        <select required>
-          <option value="">Gender</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button type="submit" class="primary-btn">Create Account</button>
-      </form>
+      <!-- Actions -->
+      <div class="result-actions">
+        <button class="btn-secondary" id="downloadBtn">Download Summary</button>
+        <button class="btn-primary" id="uploadAnotherBtn">Upload Another PDF</button>
+      </div>
 
     </div>
   </div>

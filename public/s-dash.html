@@ -7,21 +7,43 @@
 </head>
 <body>
 
-  <div class="card">
-    <h1>Student Dashboard</h1>
-    <p>Select a feature</p>
-<<div class="option-group">
-  <button class="option-btn" onclick="selectFeature('ppt')">📊 PPT</button>
-  <button class="option-btn" onclick="selectFeature('notes')">📝 Notes</button>
-  <button class="option-btn" onclick="selectFeature('flashcards')">🧠 Flash Cards</button>
-  <button class="option-btn" onclick="selectFeature('aivideo')">🎥 AI Video</button>
-</div>
+  <div class="dash-wrapper">
+    <div class="dash-container">
 
+      <h1 class="dash-title">Student Dashboard</h1>
+      <p class="dash-subtitle">Learn smarter with AI assistance</p>
 
-    <br>
-    <button onclick="logout()">Logout</button>
+      <div class="dash-grid">
+
+        <div class="dash-card go-upload">
+          <div class="dash-icon">📘</div>
+          <h3>Upload PDF</h3>
+          <p>Get instant AI summaries</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">✨</div>
+          <h3>Smart Summary</h3>
+          <p>Key points extracted automatically</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">📝</div>
+          <h3>Notes</h3>
+          <p>Organized AI notes</p>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-icon">🎯</div>
+          <h3>Practice</h3>
+          <p>Questions & revision tools</p>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
-  <script src="ui.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

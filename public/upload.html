@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Upload PDF</title>
+  <meta charset="UTF-8">
+  <title>Upload PDF | AI Teacher</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Upload Study PDF</h1>
+  <div class="upload-wrapper">
+    <div class="upload-container">
 
-    <form id="uploadForm">
-      <input type="file" id="pdfFile" accept="application/pdf" required>
-      <button type="submit">Upload PDF</button>
-    </form>
+      <h1 class="page-title">Upload your document</h1>
+      <p class="page-subtitle">AI will analyze and summarize your PDF</p>
 
-    <div id="errorBox"></div>
+      <!-- Upload Card -->
+      <div class="upload-card" id="dropZone">
+        <div class="upload-icon">📄</div>
+        <h2>Drag & drop your PDF here</h2>
+        <p>or click to browse</p>
+        <input type="file" id="pdfInput" accept="application/pdf" hidden>
+      </div>
 
-    <div class="progress-container">
-      <div class="progress-bar" id="progressBar"></div>
+      <!-- File info -->
+      <div class="file-info hidden" id="fileInfo">
+        <span id="fileName"></span>
+      </div>
+
+      <!-- Action -->
+      <button class="btn-primary hidden" id="uploadBtn">Upload & Analyze</button>
+
+      <!-- Progress -->
+      <div class="progress-wrap hidden" id="progressWrap">
+        <p class="progress-text">AI is analyzing your document…</p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
     </div>
-    <p id="progressText"></p>
-
-    <a href="index.html">← Back to Home</a>
   </div>
 
   <script src="script.js"></script>
