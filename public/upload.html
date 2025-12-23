@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload PDF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Upload Study PDF</h1>
+
+    <form id="uploadForm">
+      <input type="file" id="pdfFile" accept="application/pdf" required>
+      <button type="submit">Upload PDF</button>
+    </form>
+
+    <div id="errorBox"></div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p id="progressText"></p>
+
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

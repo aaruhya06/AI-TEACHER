@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Teacher | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <div class="auth-box">
+
+      <h1 class="logo">AI Teacher</h1>
+      <p class="tagline">Smart learning, powered by AI</p>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <span id="loginTab" class="tab active">Login</span>
+        <span id="signupTab" class="tab">Sign Up</span>
+      </div>
+
+      <!-- Login -->
+      <form id="loginForm" class="form">
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" required>
+
+        <button class="btn-primary">Continue</button>
+      </form>
+
+      <!-- Signup -->
+      <form id="signupForm" class="form hidden">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create password" required>
+
+        <button class="btn-primary">Create Account</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
