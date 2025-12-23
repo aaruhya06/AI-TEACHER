@@ -280,19 +280,44 @@ body {
 
 /* Shared card grid */
 .role-cards,
-.category-cards {
+.category-cards,
+.dash-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
   flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px auto 0;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-.dash-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
+/* Card base styles */
+.role-card,
+.category-card,
+.dash-card {
+  flex: 0 1 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #141414, #0f0f0f);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.08);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.role-card:hover,
+.category-card:hover,
+.dash-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
 }
 
 /* Shared card */
